@@ -10,6 +10,9 @@
 		"makeseed": "knex --knexfile=./database/knexfile.js seed:make",
 		"seed": "knex seed:run",
 		"lint": "eslint '**/*.js'"
-	}
+	},
+	
+	"author": "",
+	"license": "ISC"
 	
 }
