@@ -48,7 +48,7 @@ const initProducer = async () => {
 							event_name: 'tenant_created',
 							properties: {
 								id: id,
-								name: faker.company.companyName(),
+								tenant_name: faker.company.companyName(),
 								address: faker.address.streetAddress(),
 								city: faker.address.city(),
 								state: faker.address.state(),

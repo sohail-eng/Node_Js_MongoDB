@@ -16,7 +16,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use('/', require('./routes/controller'))
+//app.use('/', require('./routes/controller'))
+
+app.use('/',require('./routes/index'))
 
 
 app.use((req, res, next) => {
@@ -33,6 +35,6 @@ process.on('unhandledRejection', function (reason, promise) {
 app.listen(process.env.PORT || 4000, async () => {
 
   console.log('App started at port', process.env.PORT || 4000);
-  await initProducer();
+  //await initProducer();
 
 });
