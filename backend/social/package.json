@@ -2,6 +2,14 @@
 	"name": "sample",
 	"version": "1.0.0",
 	"description": "",
-	"main": "app.js"
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"migrate": "knex migrate:latest",
+		"makemigrate": "knex --knexfile=./database/knexfile.js migrate:make",
+		"makeseed": "knex --knexfile=./database/knexfile.js seed:make",
+		"seed": "knex seed:run",
+		"lint": "eslint '**/*.js'"
+	}
 	
 }
